@@ -1,0 +1,164 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+	.mainMenu ul li a {
+		padding:25px 10px;
+	}
+	.is-sticky .mainMenu ul.nav.navbar-nav li a {
+	    padding:25px 10px;
+	}
+	.contact-img img {
+	    margin-left: 20px;
+	    width: 205px;
+	}
+    
+}
+
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+	.logo {
+    text-align: center;
+	}
+    .mainMenu ul.nav.navbar-nav li a {
+   	padding:15px 10px;
+	}
+    .is-sticky .mainMenu ul.nav.navbar-nav li a {
+    padding:15px 10px;
+	}
+	.social-links i {
+    margin-top:5px;
+    padding:5px;
+	}
+	.is-sticky .social-links i {
+    margin-top:5px;
+    padding:5px;
+	}
+	.header-text h2 {
+    font-size: 60px;
+    margin-top: 80px;
+	}
+	.author-food-img {
+    margin-top: 40px;
+    text-align: center;
+	}
+	.authorPhoto {
+    margin-left: 40%;
+	}
+	.author-signature {
+    left: 40%;
+	}
+	.contact-img {
+    margin-bottom: 50px;
+    text-align: center;
+	}
+	.footer-widget {
+    margin-bottom: 50px;
+	}
+}
+
+
+/* Mobile Layout: 167px. */
+@media only screen and (max-width: 767px) { 
+	.logo {
+    text-align: center;
+	} 
+	.navbar-toggle {
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	float: none;
+	margin: 0;
+	padding: 9px 10px;
+	position: relative;
+	}
+	.navbar-toggle .icon-bar {
+	background: #fff none repeat scroll 0 0;
+	border-radius: 1px;
+	display: block;
+	height: 2px;
+	width: 22px;
+	}
+	.mainMenu {
+	padding-top: 20px;
+	text-align: center;
+	}
+	.mobileMenu-activated ul.nav.navbar-nav {
+    background: #000 none repeat scroll 0 0;
+	}
+	.mobileMenu-activated ul.nav.navbar-nav li {
+    border-bottom: 1px solid #111;
+	display: block;
+	text-align: center;
+	}
+	.social-links {
+	text-align: center;
+	}
+	.social-links i {
+	font-size: 15px;
+	margin-top: 0;
+	padding: 5px;
+	}
+	.is-sticky .social-links i {
+  	margin:0;
+	}
+	.is-sticky .mainMenu ul.nav.navbar-nav li a {
+	padding: 15px 20px;
+	}
+	.header-text h2 {
+	font-size: 50px;
+	}
+	.author-food-img {
+	margin-top: 30px;
+	}
+	.contact-img img {
+	margin-left: 20px;
+	width: 230px;
+	}
+	.contact-img {
+	margin-bottom: 20px;
+	}
+	.footer-widget {
+	margin-bottom: 35px;
+	}
+	.page {
+	padding: 60px 0;
+	}
+}
+
+
+
+/* Medium Layout: 375px. */
+@media only screen and (max-width: 375px) {
+	.header-text h2 {
+		font-size: 40px;
+	}
+	.btn-filled {
+  margin-bottom: 15px;
+}
+	.authorPhoto {
+  margin-left: 15%;
+	}
+	.author-signature {
+  left: 80px;
+}
+.contact-img img {
+  width: 110px;
+}
+}
+
+/* Medium Layout: 240px. */
+@media only screen and (max-width: 240px) {
+	h2 {
+		font-size: 25px;
+	}
+	.authorPhoto {
+		margin-left: 0%;
+	}
+	.author-signature {
+		left: 10px;
+	}
+	.contact-img img {
+		width: 70px;
+	}
+}

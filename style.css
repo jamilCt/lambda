@@ -1,0 +1,335 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+.fix { overflow: hidden }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-family: 'Yeseva One', cursive;
+}
+html,
+body { height: 100% }
+body { font-family: 'Gentium Book Basic', serif }
+a {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #333;
+}
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+a:hover { text-decoration: none }
+
+
+.top-area { position: relative }
+.top-area-bg {
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+
+.logo img { height: 90px }
+.header-area {
+    position: relative;
+    z-index: 999;
+    width: 100%;
+}
+.mainMenu ul.nav.navbar-nav {
+    float: none;
+    font-size: 20px;
+    text-align: right;
+}
+.mainMenu ul.nav.navbar-nav li {
+    display: inline-block;
+    float: none;
+    position: relative;
+}
+.mainMenu ul.nav.navbar-nav li a {
+    color: #fff;
+    background: none;
+}
+.mainMenu ul.nav.navbar-nav li a:focus {
+    color: #fff;
+    padding: 40px 15px;
+}
+.mainMenu ul.nav.navbar-nav li a:hover { background: none }
+.mainMenu ul.nav.navbar-nav li.active:before {
+    content: "";
+    background: #C8C5BA;
+    height: 3px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.is-sticky .header-area:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #000;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.is-sticky .logo img {
+    height: 65px;
+    padding: 10px 0;
+}
+.is-sticky .social-links i { margin-top: 15px }
+.is-sticky .mainMenu ul.nav.navbar-nav li a { padding: 25px 20px }
+.is-sticky .mainMenu ul.nav.navbar-nav li.active a { color: #CC9900 }
+.btn-filled {
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 30px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+.header-area:after,
+.logo img,
+.mainMenu ul.nav.navbar-nav li a,
+.social-links i { -webkit-transition: .4s; transition: .4s }
+
+
+.slide-bg-1 { background: url(images/header-bg.jpg);}
+.slide-bg-2 { background: url(images/ingredients-bg.jpg);}
+
+
+.header-text h2 {
+    background: rgba(0, 0, 0, 0) url("images/line_symbol.png") no-repeat scroll center bottom;
+    color: #fff;
+    font-size: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 40px;
+    padding-top: 50px;
+}
+
+
+
+.slide-control {
+    color: #fff;
+    font-size: 60px;
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    opacity: .2;
+    filter: alpha(opacity=20);
+}
+.slide-control:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    color: #fff;
+}
+.right.slide-control {
+    left: auto;
+    right: 30px;
+}
+
+.btn-filled:after {
+    content: "";
+    position: absolute;
+    background: #1D2122;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    z-index: -1;
+}
+.btn-filled.yellow-color-btn:after { background: #D2BA82 }
+.header-text { padding: 100px 0 }
+.social-links i {
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 10px;
+}
+.social-links a { color: #dab33e }
+.page { padding: 100px 0 }
+.about-area { background: url(images/symphony.png) }
+.section-title {
+    background: url(images/sectionTitlePattern.png) no-repeat scroll center bottom;
+    color: #CC9900;
+    margin-bottom: 25px;
+    padding-bottom: 35px;
+}
+.authorPhoto {
+    border-radius: 50%;
+    height: 200px;
+    margin-left: 30%;
+    margin-top: 30px;
+    overflow: hidden;
+    width: 200px;
+    position: relative;
+}
+.aboutText { margin-top: 15px }
+.author-signature {
+    bottom: -30px;
+    left: 160px;
+    position: absolute;
+    width: 200px;
+}
+.header-text-area { position: relative }
+.sticky-wrapper {
+    position: absolute;
+    width: 100%;
+}
+.ingredients-area { position: relative }
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.ingredients-bg { background: url(images/tomatto.jpg) }
+.ingredients-text {
+    color: #fff;
+    padding: 50px 30px;
+    position: relative;
+    z-index: 1;
+}
+.ingredients-text:after,
+.testimonial-list:after {
+    content: "";
+    position: absolute;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    z-index: -1;
+}
+.section-title-white {
+    background: url(images/sectionTitlePattern-white.png) no-repeat scroll center bottom;
+    color: #fff;
+    margin-bottom: 25px;
+    padding-bottom: 35px;
+}
+.ingredients-text h2 { margin-top: 50px }
+.ingredients-text p { margin-bottom: 50px }
+.menu-section { }
+.food-menu { background: url(images/confectionary.png) }
+.single-food-menu-item h2 {
+    border-bottom: 1px solid;
+    color: #C89F2D;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.single-food-menu-item h2 span {
+    float: right;
+    font-weight: 400;
+}
+.single-food-menu-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+.menu-section { }
+.special:after {
+    background: #d4b55f none repeat scroll 0 0;
+    color: #fff;
+    content: "special";
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    padding: 1px 7px;
+    position: absolute;
+    right: -1px;
+    text-transform: uppercase;
+    top: -22px;
+}
+.single-food-menu-item.special {
+    border: 1px solid #d4b55f;
+    padding: 10px;
+}
+.testimonial-area { position: relative }
+.testimonial-bg { background: url(images/testimonial-bg.jpg) }
+.testimonial-list {
+    font-size: 25px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+}
+.testimonial-list p.testimonial-author { margin-top: 30px }
+#testimonial-carousel:before {
+    font-family: fontAwesome;
+    content: "\f10d";
+    position: absolute;
+    color: #9A9B9A;
+    top: -25px;
+    left: -40px;
+    font-size: 35px;
+}
+.contact-area { background: url(images/symphony.png) }
+.contact-img img {
+    margin-left: 40px;
+    width: 235px;
+}
+.contact-form { text-align: left }
+.contact-form input[type="text"] {
+    border: 1px solid #e2d4ac;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 100%;
+}
+.contact-form label { }
+.contact-form label { color: #cb9871 }
+.contact-form button {
+    background: #c8a03c none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    padding: 5px 30px;
+    width: 150px;
+}
+.contact-form select {
+    border: 1px solid #e2d4ac;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 100%;
+}
+.footer-area {
+    background: #191919;
+    color: #aaa;
+}
+.section-title-footer {
+    background: url(images/sectionTitlePattern-white.png) no-repeat scroll center bottom;
+    margin-bottom: 25px;
+    padding-bottom: 35px;
+    font-size: 21px;
+}
+.footer-widget i { padding: 5px }
